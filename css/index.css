@@ -1,0 +1,263 @@
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+header{
+    text-align: center;
+    color: rgba(200, 200, 220, 220);
+    width: 100%;
+    height: auto;
+    font-size: x-large;
+    background-color: brown;
+    padding: 10px;
+}
+
+header h2{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navigate{
+    position: sticky;
+    background-color: chocolate;
+    width: 100%;
+    height: auto;
+    z-index: 1 ;
+    margin: 0%;
+}
+
+.menu{
+    margin: 0%;
+    margin-left: 5%;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0%;
+    padding: 8px;
+}
+
+/* .menu li:hover{
+    background-color: lightblue;
+} */
+
+.menu li a{
+    text-decoration: none;  
+    cursor: pointer;
+    font-size: larger;
+    padding: 8px;
+    margin: 0%;
+}
+
+.menu li:hover{
+    background-color: lightblue;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    padding: 0%;
+    margin: 0%;
+    top: 38px;
+}
+
+.dropdown li{
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown li a{
+    padding: 5px;
+}
+
+.dropdown li:hover{
+    background-color: lightblue;
+}
+
+.menu li:nth-child(2):hover .dropdown, .menu li:nth-child(3):hover .dropdown {
+    display: block;
+}
+
+.advertisement{
+    width: auto;
+   height: 435px;
+   padding: 15px;
+   /* border: 1px solid black; */
+   overflow: hidden;
+   margin: 15px;
+}
+
+#slideshow{
+    height: 400px;
+    padding: 15px;
+    overflow: hidden;
+    border: 2px solid steelblue;
+    background-color: azure;
+}
+
+.container{
+    width: 500%;
+    height: 402px;
+    padding: 0%;
+    position: relative;
+    animation: slide 30s ease-in-out infinite;
+    
+}
+
+.container section{
+    display: inline-block;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    padding-right: 15px;
+}
+
+.advertisement img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes slide {
+    0% {left:0%;}
+    20% {left:-85%;}
+    40% {left:-170%;}
+    60% {left:-245%;}
+    80% {left:-318%;}
+    100% {left: 0%;}
+}
+
+.shop{
+    margin: 15px;
+}
+
+.products{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+}
+
+.products h2{
+    margin-top: 0%;
+}
+
+.product{
+    margin: 10px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.product-description{
+    background-color: bisque;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    box-shadow: 5px 5px #888888;
+}
+
+.product-name{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.product-image{
+    width: 225px;
+    height: 250px;
+}
+
+.price p{
+    padding: 0%;
+    margin: 0%;
+    color: steelblue;
+}
+
+.add-cart{
+    width: 100%;
+    font-weight: bold;
+    font-size: medium;
+    color: orange;
+    text-align: center;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+footer p{
+    margin: 0%;
+    padding: 15px;
+    text-align: right;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .menu{
+        margin: 0%;
+    }
+
+    .advertisement{
+       height: auto;
+    }
+    
+    #slideshow{
+        height: 168px;
+    }
+
+    .container{
+        /* width: 200%; */
+        height: 168px;
+        display: flex;
+    }
+
+    .container section{
+        padding: 0%;
+        padding-right: 15px;
+    }
+
+    .advertisement img{
+        width: 100%;
+        height: 100%;
+    }
+
+    @keyframes slide {
+        0% {left:0%;}
+        20% {left:-105%;}
+        40% {left:-212%;}
+        60% {left:-305%;}
+        80% {left:-400%;}
+        100% {left: 0%;}
+    }
+
+    .product{
+        display: block;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .product-description{
+        margin-bottom: 20px;
+    }
+
+    .product-image{
+        width: 100%;
+        height: 100%;
+    }
+
+}

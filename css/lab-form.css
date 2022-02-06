@@ -1,0 +1,153 @@
+body{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    text-align: center;
+    color: rgba(200, 200, 220, 220);
+    width: 100%;
+    height: auto;
+    font-size: x-large;
+    background-color: brown;
+    padding: 10px;
+    z-index: 1;
+}
+
+header h2{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    padding: 0%;
+    margin: 0%;
+}
+
+.image-container{
+    position: absolute;
+    top: 9%;
+    left: 53%;
+}
+
+.lab-image-container{
+    position: fixed;
+}
+
+.lab-image {
+    width: 47%;
+    height: 91%;
+    /* position: fixed; */
+    margin: 0%;
+    border-top: 1px solid brown;
+}
+
+.lab-form-container{
+    width: 51%;
+    position: absolute;
+    top: 10%;
+    margin: 15px;
+}
+
+.patient-details{
+    margin: 0%;
+    padding: 15px;
+}
+
+.patient-details h3{
+    margin: 0%;
+}
+
+.entry-field{
+    padding: 10px;
+}
+
+input {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #888888;
+    font-size: 15px;
+}
+
+#district{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #888888;
+    background-color: white;
+    font-size: 15px;
+    color: #888888;
+}
+
+input[type=checkbox]{
+    width: auto;
+   
+}
+
+#hard-copy{
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #888888;
+    background-color: white;
+    font-size: 15px;
+    color: #888888;
+}
+
+input[type=datetime-local]{
+    width: auto;
+}
+
+.btn-field{
+    text-align: center;
+}
+
+button{
+    width: auto;
+    font-size: 15px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .lab-form-container{
+        top: 12%;
+    }
+    
+    input{
+        display: block;
+        width: 75%;
+    }
+
+    #district{
+        width: 75%;
+    }
+    
+    input[type=checkbox]{
+        width: 50%;
+        display: inline;
+    }
+
+    input[type=datetime-local]{
+        width: 75%;
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lab-form.css">
+    <title>Lab Test Booking</title>
+</head>
+<body>
+    <header> <h2>Pharmacy</h2></header>
+    <section class="image-container">
+        <div class="lab-image-container">
+                <div class="lab-image">
+                    <img src="../Images/Lab-Test/lab-test.jpg" alt="Lab Image" />
+                </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="lab-form-container">
+            <form action="#" >
+                <div class="patient-details">
+                    <section><h3>1. Your Contact Details</h3></section>
+                    <section class="entry-field">
+                        <input type="text" name="fullName" placeholder="Full Name" title="Special characters are not allowed" autocapitalize="All" autofocus required />
+                        <input type="text" name="id" pattern="[a-zA-Z0-9]+" placeholder="Patient Id if exists" autofocus required />
+                        <input type="tel" name="phoneNumber" pattern="[0-9]{10}" title="Enter only digits" autofocus placeholder="Contact Number" required />
+                        <input type="email" name="email" placeholder="Email Id" autofocus autocapitalize="off" required />
+                    </section>
+                    <section><h3>2. Address</h3></section>
+                    <section class="entry-field">
+                        <input type="text" name="houseNumber" pattern="[0-1000]" placeholder="H.No" autofocus required />
+                        <input type="text" name="street" placeholder="Street" autofocus required />
+                        <input type="text" name="area" placeholder="Area" autofocus required />
+                        <section><h4>District</h4></section>
+                        <select id="district" name="districts" autofocus required>
+                            <option value="" selected>-- Choose --</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Ara">Ara</option>
+                            <option value="Madhubani">Madhubani</option>
+                            <option value="Hajipur">Hajipur</option>
+                            <option value="Lalganj">Lalganj</option>
+                            <option value="Gaya">Gaya</option>
+                            <option value="Buxar">Buxar</option>
+                        </select>
+                    </section>
+                    <section><h3>3. Test Type</h3></section>
+                    <section class="entry-field">
+                        <section>
+                            <input type="checkbox" name="testType" id="testType1" value="CBC">
+                            <label for="testType1">CBC</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="testType" id="testType2" value="Complete Urine">
+                            <label for="testType2">Complete Urine</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="testType" id="testType3" value="Lipid Profile">
+                            <label for="testType3">Lipid Profile</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="testType" id="testType4" value="Thyroid Stimulating Hormone(TSH)">
+                            <label for="testType4">Thyroid Stimulating Hormone(TSH)</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="testType" id="testType5" value="Glucose Test">
+                            <label for="testType5">Glucose Test</label>
+                        </section>
+                    </section>
+                    <section><h3>4. Do you want a hard copyof the report also?</h3></section>
+                    <section class="entry-field">
+                        <select id="hard-copy" name="hardCopy" autofocus required>
+                            <option value="" selected>-- Choose --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </section>
+                    <section><h3>5. Date and Time</h3></section>
+                    <section class="entry-field">
+                        <input type="datetime-local" name="dateTime" placeholder="Date and Time" autofocus required>
+                    </section>
+                    <section class="btn-field">
+                        <button type="reset" name="reset">Reset</button> 
+                        <button type="submit" name="submit">Submit</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
